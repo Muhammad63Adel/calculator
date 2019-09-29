@@ -3,94 +3,136 @@ package com.example.muhammad.calculator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import org.mariuszgromada.math.mxparser.*;
 
-import static android.R.id.message;
 
 public class MainActivity extends AppCompatActivity {
- String y = "0";
+
+    TextView tv;
+    TextView resultTv;
+
+
+
+
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tv = findViewById(R.id.tv);
+        resultTv = findViewById(R.id.result);
+
+    }
+
+
+
+    public void sqrt(View view) {
+
     }
 
     public void num1(View view) {
-        y="1";
-        displayText(y);
+        WriteOnScreen("1");
+
     }
     public void num2(View view) {
-        y="2";
-        displayText(y);
+        WriteOnScreen("2");
+
+
     }
     public void num3(View view) {
-        y="3";
-        displayText(y);
+        WriteOnScreen("3");
+
+
     }
     public void num4(View view) {
-        y="4";
-        displayText(y);
+        WriteOnScreen("4");
+
+
     }
 
     public void num5(View view) {
-        y="5";
-        displayText(y);
+        WriteOnScreen("5");
+
     }
 
     public void num6(View view) {
-        y="6";
-        displayText(y);
+        WriteOnScreen("6");
+
+
     }
 
     public void num7(View view) {
-        y="7";
-        displayText(y);
+        WriteOnScreen("7");
+
+
+
     }
     public void num8(View view) {
-        y="8";
-        displayText(y);
+        WriteOnScreen("8");
+
+
     }
     public void num9(View view) {
-        y="9";
-        displayText(y);
+        WriteOnScreen("9");
+
+
     }
     public void num0(View view) {
-        y="0";
-        displayText(y);
+        WriteOnScreen("0");
+
+
     }
     public void divid(View view) {
-        y="/";
-        displayText(y);
+        WriteOnScreen("/");
+
+
     }
     public void mult(View view) {
-        y="*";
-        displayText(y);
+        WriteOnScreen("*");
+
+
     }
     public void add(View view) {
-        y="+";
-        displayText(y);
+        WriteOnScreen("+");
+
+
     }
     public void sub(View view) {
-        y="-";
-        displayText(y);
+        WriteOnScreen("-");
+
+
     }
     public void equal(View view) {
-        y="";
-        displayText(y);
+
+        String expressioin  = tv.getText().toString();
+        Expression e = new Expression(expressioin);
+
+        String result = String.valueOf(e.calculate());
+
+        resultTv.setText(result);
+
     }
-    public void num22(View view) {
-        y=".";
-        displayText(y);
+    public void dot(View view) {
+        WriteOnScreen(".");
+
+
     }
     public void reset(View view) {
-        y="";
-        displayText(y);
+        Reset();
+
     }
 
+    void WriteOnScreen(String expression){
+        String exp = tv.getText().toString();
+        exp = exp + expression;
+        tv.setText(exp);
+    }
 
-    private void displayText(String x) {
-        TextView result = (TextView) findViewById(R.id.result);
-        CharSequence output =result.getText();
-        result.setText(output + x);
+    void Reset (){
+        tv.setText("");
+        resultTv.setText("0");
     }
 }

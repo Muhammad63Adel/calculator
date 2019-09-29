@@ -6,6 +6,57 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+
+    <style name="number_style_zero">
+
+        <item name="layout_widthPercent">50%</item>
+        <item name="layout_heightPercent">14%</item>
+        <item name="android:background">@drawable/button_border</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+
     </style>
 
+
+    <style name="number_style">
+
+        <item name="layout_widthPercent">25%</item>
+        <item name="layout_heightPercent">14%</item>
+        <item name="android:background">@drawable/button_border</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="operator_style">
+
+        <item name="layout_widthPercent">25%</item>
+        <item name="layout_heightPercent">14%</item>
+        <item name="android:background">@drawable/button_border3</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="clear">
+
+        <item name="layout_widthPercent">25%</item>
+        <item name="layout_heightPercent">14%</item>
+        <item name="android:background">@drawable/button_border3</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="operator_style_equal">
+
+        <item name="layout_widthPercent">25%</item>
+        <item name="layout_heightPercent">28%</item>
+        <item name="android:background">@drawable/button_border2</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
 </resources>

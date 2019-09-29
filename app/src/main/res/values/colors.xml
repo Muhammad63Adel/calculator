@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#FE6A2A</color>
+    <color name="colorPrimaryDark">#FE6A2A</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!-- colors numbers_btn -->
+    <color name="num_btn">#535452</color>
+
+
+    <!-- colors operators_btn -->
+    <color name="operator_btn">#3C3D3B</color>
+
 </resources>
