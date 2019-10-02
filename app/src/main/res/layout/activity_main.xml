@@ -21,8 +21,8 @@
         android:padding="3dp"
         android:gravity="end"
         android:textSize="20sp"
-        android:background="@android:color/black"
-        android:textColor="@color/colorPrimary"
+        android:background="@android:color/white"
+        android:textColor="@android:color/darker_gray"
         />
     <TextView
         android:id="@+id/result"
@@ -33,8 +33,8 @@
         android:padding="5dp"
         android:gravity="end"
         android:textSize="40sp"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
         />
 
     <Button
@@ -174,7 +174,7 @@
         />
     <Button
         android:id="@+id/sqrt"
-        android:text="sqrt"
+        android:text="%"
         android:onClick="sqrt"
         android:textAllCaps="false"
         android:layout_above="@+id/num7"
